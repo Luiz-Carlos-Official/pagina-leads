@@ -1,0 +1,246 @@
+/* ======= CONFIGURAÇÕES GERAIS ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #1a1a1a;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+    background: linear-gradient(135deg, #d60000, #ff3b3b);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ======= SEÇÕES ======= */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #d60000;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin-bottom: 0.6rem;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid #d60000;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* ======= VÍDEO ======= */
+.video {
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ======= DEPOIMENTOS ======= */
+.depoimentos blockquote {
+    background: #fff5f5;
+    border-left: 4px solid #d60000;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.depoimentos cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* ======= GARANTIA ======= */
+.garantia {
+    background: #f3f3f3;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.garantia h2 {
+    color: #222;
+}
+
+.garantia p {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* ======= BOTÃO DE COMPRA ======= */
+.cta {
+    text-align: center;
+    background: #fff0f0;
+    padding: 2.5rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cta h2 {
+    color: #d60000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.botao-comprar {
+    display: inline-block;
+    background: #d60000;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(214,0,0,0.4);
+}
+
+.botao-comprar:hover {
+    background: #ff2b2b;
+    transform: scale(1.05);
+}
+
+.cta .aviso {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 0.9rem;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+
+/* --- Tablets --- */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    .video iframe {
+        height: 320px;
+    }
+
+    .cta h2 {
+        font-size: 1.7rem;
+    }
+
+    .botao-comprar {
+        padding: 0.9rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Celulares --- */
+@media (max-width: 600px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p, ul li {
+        font-size: 0.95rem;
+    }
+
+    .video iframe {
+        height: 230px;
+        border-radius: 6px;
+    }
+
+    .botao-comprar {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 12px;
+        font-weight: bold;
+        box-shadow: 0 6px 12px rgba(214,0,0,0.4);
+    }
+
+    .cta {
+        background: linear-gradient(180deg, #fff5f5, #ffeaea);
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
